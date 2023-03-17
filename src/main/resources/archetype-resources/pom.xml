@@ -8,7 +8,7 @@
 	<version>${version}</version>
 	<packaging>${packaging}</packaging>
 
-	<name>${groupId}</name>
+	<name>${artifactId}</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
