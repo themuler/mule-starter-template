@@ -6,7 +6,7 @@
   <version>1.0.0</version>
   <packaging>maven-archetype</packaging>
 
-  
+
   <name>Mule Starter Template</name>
   <url>http://maven.apache.org</url>
 
@@ -22,6 +22,29 @@
         <version>3.2.1</version>
       </extension>
     </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.mule.tools.maven</groupId>
+        <artifactId>exchange-mule-maven-plugin</artifactId>
+        <version>0.0.13</version>
+        <executions>
+          <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>exchange-pre-deploy</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>exchange-deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <distributionManagement>
