@@ -1,6 +1,6 @@
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
   xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="my-archetype">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mule-starter-template">
 
   <fileSets>
     <fileSet filtered="true" package="false" encoding="UTF-8">
@@ -23,14 +23,20 @@
         <include>**/*.*</include>
       </includes>
     </fileSet>
-    </fileSet>
+
     <fileSet filtered="true" package="false" encoding="UTF-8">
       <directory>src/main/resources</directory>
       <includes>
         <include>**/*.raml</include>
         <include>**/*.json</include>
         <include>**/*.xml</include>
-        <include>**/*.txt</include>
+        <include>**/*.yaml</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" package="false" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>*</include>
       </includes>
     </fileSet>
 
@@ -78,7 +84,7 @@
     <requiredProperty key="version">
       <defaultValue>1.0.0</defaultValue>
     </requiredProperty>
-    <requiredProperty key="package">
+    <requiredProperty key="packaging">
       <defaultValue>mule-application</defaultValue>
     </requiredProperty>
   </requiredProperties>
