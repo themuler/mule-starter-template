@@ -31,8 +31,8 @@
   </build>
 
   <scm>
-    <developerConnection>scm:git:ssh://git@github.com/themuler/mule-starter-template.git</developerConnection>
-    <tag>mule-starter-template-1.0.0</tag>
+    <developerConnection>scm:git:ssh://git@github.com:themuler/mule-starter-template.git</developerConnection>
+    <tag>mule-starter-template-1.0.4</tag>
   </scm>
 
   <!-- <distributionManagement>
