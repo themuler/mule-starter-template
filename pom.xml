@@ -52,7 +52,7 @@
   </build>
 
   <scm>
-    <developerConnection>scm:git:ssh://git@bitbucket.org/bhavanichandrav/mule-archetype.git</developerConnection>
+    <developerConnection>scm:git:ssh://git@github.com:themuler/mule-starter-template.git</developerConnection>
     <tag>mule-starter-template-1.0.0</tag>
   </scm>
 
