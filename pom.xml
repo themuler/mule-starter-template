@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>b7342976-15f0-4e6c-9978-27c25a3e9061</groupId>
   <artifactId>mule-starter-template</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>maven-archetype</packaging>
 
 
@@ -32,6 +32,7 @@
 
   <scm>
     <developerConnection>scm:git:ssh://git@github.com/themuler/mule-starter-template.git</developerConnection>
+    <tag>mule-starter-template-1.0.0</tag>
   </scm>
 
   <!-- <distributionManagement>
