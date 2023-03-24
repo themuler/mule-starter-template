@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>b7342976-15f0-4e6c-9978-27c25a3e9061</groupId>
   <artifactId>mule-starter-template</artifactId>
@@ -27,6 +28,27 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.0</version>
       </plugin>
+      <plugin>
+        <groupId>org.mule.tools.maven</groupId>
+        <artifactId>exchange-mule-maven-plugin</artifactId>
+        <version>0.0.13</version>
+        <executions>
+          <execution>
+            <id>validate</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>exchange-pre-deploy</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>exchange-deploy</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
@@ -34,7 +56,7 @@
     <developerConnection>scm:git:ssh://git@bitbucket.org/bhavanichandrav/mule-archetype.git</developerConnection>
     <tag>mule-starter-template-1.0.0</tag>
   </scm>
-  
+
   <distributionManagement>
     <repository>
       <id>exchange-v2</id>
